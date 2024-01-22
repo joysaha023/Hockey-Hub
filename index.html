@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey Hub</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Images/hockey-sticks.png">
+    <link rel="icon" type="image/x-icon" href="./assets/Images/icon-fav.png">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,6 +15,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color': '#FF4240',
               }
             }
           }
@@ -22,9 +23,45 @@
       </script>
 </head>
 <body>
-   <header>
-    
+    <!-- header section start -->
+   <header class="container mx-auto">
+    <!-- navbar section start -->
+    <nav class="pt-2">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="font-extrabold text-base text-black lg:text-4xl" href="#">Hockey <span>Hub</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="hover:text-primary-color hover:font-extrabold"><a>Home</a></li>
+                <li class="hover:text-primary-color hover:font-extrabold"><a>About</a></li>
+                <li class="hover:text-primary-color hover:font-extrabold"><a>Pages</a></li>
+                <li class="hover:text-primary-color hover:font-extrabold"><a>Blog</a></li>
+                <li class="hover:text-primary-color hover:font-extrabold"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a href="#" class="text-[#424247] hover:text-primary-color hover:scale-150 mr-6 hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a class="btn bg-primary-color text-white hover:text-black">Button</a>
+            </div>
+          </div>
+    </nav>
+    <!-- navbar section end -->
    </header>
+   <!-- header section end -->
    <main>
 
    </main>
